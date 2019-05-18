@@ -3,6 +3,8 @@
 ## Objective
 Change a quote API server to allow POSTs of new quotes.
 
+The new quotes should be added to your quotes list, which is just an array in memory.
+
 The route should be `/quotes` and the HTTP method should be POST.
 
 ## What should I start with?
@@ -15,6 +17,9 @@ Then you can visit `/` and submit the form there, when you are ready to try to s
 ## Getting help
 
 You should refer to the [official Express documentation on req.body](https://expressjs.com/en/api.html#req.body) to help you with this.
+
+##  My quotes keep being lost
+* Your node/express program on glitch is automatically reloaded each time you make a change.  This reloading will mean your array of quotes is initialised again.  When you are ready to test, don't edit the project at all!
 
 ## When you are finished
 * When you are finished, DM your URL via Slack to someone sitting next to you and they must test if your API works!
