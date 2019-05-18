@@ -22,4 +22,4 @@ You should refer to the [official Express documentation on req.body](https://exp
 * Your node/express program on glitch is automatically reloaded each time you make a change.  This reloading will mean your array of quotes is initialised again.  When you are ready to test, don't edit the project at all!
 
 ## When you are finished
-* When you are finished, DM your URL via Slack to someone sitting next to you and they must test if your API works!
+* When you are finished (including testing), DM your URL via Slack to someone sitting next to you and they must test if your API works!
