@@ -8,6 +8,8 @@ Note: You should use [OUR starting project: cyf-quotes-post-start](https://glitc
 
 When you remix our starting project, immediately rename it as `cyf-mussie-quotes-v2` but change it for YOUR name.
 
+Then you can visit `/` and submit the form there, when you are ready to try to submit new quotes!
+
 ## Getting help
 
 You should refer to the [official Express documentation on req.body](https://expressjs.com/en/api.html#req.body) to help you with this.
