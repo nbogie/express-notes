@@ -1,4 +1,4 @@
-# In-class exercise: Allow adding of new quotes via POST
+# Exercise: Allow adding of new quotes via POST (5-15 minutes)
 
 **Objective:** change a quote API server to allow POSTs of new quotes.
 
