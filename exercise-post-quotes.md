@@ -8,3 +8,5 @@ Note: You should use [OUR starting project: cyf-quotes-post-start](https://glitc
 
 You should refer to the [official Express documentation on req.body](https://expressjs.com/en/api.html#req.body) to help you with this.
 
+## When you are finished
+When you are finished, DM your URL via Slack to someone sitting next to you and they must test if your API works!
