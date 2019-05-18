@@ -4,7 +4,7 @@
 
 The route should be `/quotes` and the HTTP method should be POST.
 
-Note: You should use [OUR starting project](TODO), NOT your own existing quote server. This is because our project has an html form for creating new quotes.
+Note: You should use [OUR starting project: cyf-quotes-post-start](https://glitch.com/~cyf-quotes-post-start), NOT your own existing quote server. This is because our project has an HTML form for creating new quotes.
 
 You can use the [official documentation on req.body](https://expressjs.com/en/api.html#req.body) to help you with this.
 
