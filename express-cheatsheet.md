@@ -28,5 +28,6 @@ if it has come from a HTML form you need to add the line
 if it has come from a HTML form you need to add the line
 ```app.use(express.json())```
 
+In both cases you can then say `request.body` to get either an object of key-value pairs, or the JSON which was posted.
 
 [Here is the official Express.js documentation on the topic of req.body](https://expressjs.com/en/api.html#req.body)
