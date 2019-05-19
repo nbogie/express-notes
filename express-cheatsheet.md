@@ -16,7 +16,7 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT);
 ```
 
-## Route parameters
+## Extracting values of "Route parameters"
 
 * If you make a route with a path of `/quotes/:quoteId`
 * ...and then you make a GET request for a URL like: http://localhost:3000/quotes/17
