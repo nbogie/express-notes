@@ -17,6 +17,7 @@ Then you can visit `/` and submit the form there, when you are ready to try to s
 ## Getting help
 
 You should refer to the [official Express documentation on req.body](https://expressjs.com/en/api.html#req.body) to help you with this.
+Or you can refer to [this small express cheatsheet](express-cheatsheet.md)
 
 ##  My quotes keep being lost
 * Your node/express program on glitch is automatically reloaded each time you make a change.  This reloading will mean your array of quotes is initialised again.  When you are ready to test, don't edit the project at all!
