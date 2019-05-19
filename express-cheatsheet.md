@@ -16,7 +16,7 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT);
 ```
 
-## Extracting values of query parameters
+## Extracting values of "Query parameters"
 
 * If you make a route with a path of `/quotes/search`
 * ...and then you make a GET request for a URL like: http://localhost:3000/cars/search?color=blue&gears=5
