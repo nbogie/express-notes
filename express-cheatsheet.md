@@ -22,6 +22,7 @@ app.listen(process.env.PORT);
 * ...and then you make a GET request for a URL like: http://localhost:3000/cars/search?color=blue&gears=5
 * ...then you can obtain the query parameters from the request using: `request.query.color` and `request.query.gears`
 
+[Official Express.js docs on req.query](https://expressjs.com/en/api.html#req.query)
 
 ## Extracting values of "Route parameters"
 
