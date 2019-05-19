@@ -16,6 +16,13 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT);
 ```
 
+## Route parameters
+
+* If you make a route with a path of `/quotes/:quoteId`
+* ...and then you make a request for URL: http://localhost:3000/quotes/17
+* ...then you can obtain the quoteId from the request using: `request.params.quoteId`
+
+[Here's the official Express.js documentation on Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
 ## Accessing request.body in a POST request
 If you are going to use the body of a POST request in a route, you will have to add one of two lines to first process the body.  If the request has come from
