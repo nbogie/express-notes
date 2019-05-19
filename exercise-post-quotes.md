@@ -5,6 +5,8 @@ Change a quote API server to allow POSTs of new quotes.
 
 The new quotes should be added to your quotes list, which is just an array in memory.
 
+You can assume the POSTed quotes are all in the correct JSON format.
+
 The route should be `/quotes` and the HTTP method should be POST.
 
 ## What should I start with?
