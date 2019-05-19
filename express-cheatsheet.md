@@ -19,7 +19,7 @@ app.listen(process.env.PORT);
 ## Route parameters
 
 * If you make a route with a path of `/quotes/:quoteId`
-* ...and then you make a request for URL: http://localhost:3000/quotes/17
+* ...and then you make a GET request for a URL like: http://localhost:3000/quotes/17
 * ...then you can obtain the quoteId from the request using: `request.params.quoteId`
 
 [Here's the official Express.js documentation on Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
