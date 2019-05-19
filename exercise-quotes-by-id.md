@@ -1,4 +1,4 @@
-# Exercise: Allow GETting of quotes by ID
+# Exercise: Allow getting quotes by ID
 
 ## Objective
 Change a quote API server to allow GETting a quote according to the given ID.
