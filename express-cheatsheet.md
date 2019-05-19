@@ -22,7 +22,7 @@ app.listen(process.env.PORT);
 * ...and then you make a GET request for a URL like: http://localhost:3000/cars/search?color=blue&gears=5
 * ...then you can obtain the query parameters from the request using: `request.query.color` and `request.query.gears`
 
-[Official Express.js docs on req.query](https://expressjs.com/en/api.html#req.query)
+[Official Express.js documentation about req.query](https://expressjs.com/en/api.html#req.query)
 
 ## Extracting values of "Route parameters"
 
@@ -30,7 +30,7 @@ app.listen(process.env.PORT);
 * ...and then you make a GET request for a URL like: http://localhost:3000/quotes/17
 * ...then you can obtain the quoteId from the request using: `request.params.quoteId`
 
-[Here's the official Express.js documentation on Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
+[Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
 ## Accessing request.body in a POST request
 If you are going to use the body of a POST request in a route, you will have to add one of two lines to first process the body.  If the request has come from
@@ -45,4 +45,4 @@ if it has come from a HTML form you need to add the line
 
 In both cases you can then say `request.body` to get either an object of key-value pairs, or the JSON which was posted.
 
-[Here is the official Express.js documentation on the topic of req.body](https://expressjs.com/en/api.html#req.body)
+[Official Express.js documentation about req.body](https://expressjs.com/en/api.html#req.body)
