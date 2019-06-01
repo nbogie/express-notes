@@ -1,6 +1,9 @@
+In groups, work out the detail of the HTTP messages and involved route handler(s) needed to deal with the following stories.  
+In all cases assume the recipe API lives at https://api.cyfrecipes.site
+
 ## 1. I want to read ALL recipes
 ## 2. I want to read this ONE recipe.  Its `id` is 17 and its `title` is "Lasagne".
-## 3. I want to create this new recipe... i have the JSON ready
+## 3. I want to create this new recipe:
 
 ```
 {
@@ -25,7 +28,7 @@
 }
 ```
 
-## 4. I want to delete this recipe
+## 4. I want to delete the following recipe
 ```
 {
   "id": 31,
