@@ -16,23 +16,6 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT);
 ```
 
-## Extracting values of "Query parameters"
-
-* If you make a route with a path of `/quotes/search`
-* ...and then you make a GET request for a URL like: http://localhost:3000/cars/search?color=blue&gears=5
-* ...then you can obtain the query parameters from the request using: `request.query.color` and `request.query.gears`
-
-[Official Express.js documentation about req.query](https://expressjs.com/en/api.html#req.query)
-
-## Extracting values of "Route parameters"
-
-* If you make a route with a path of `/quotes/:quoteId`
-* ...and then you make a GET request for a URL like: http://localhost:3000/quotes/17
-* ...then you can obtain the quoteId from the request using: `request.params.quoteId`
-
-[Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
-
-
 # Basic C.R.U.D. operations (Create Read Update Delete)
 
 ## CREATING a resource
@@ -118,4 +101,22 @@ app.delete('/recipes/:id', function(req, res) {
 ```
 
 Note that the request params will be strings, not numbers, so you may have to attempt to convert your id param to a number before trying to match it against recipe ids if those happen to be stored as numbers.
+
+
+## Extracting values of "Query parameters"
+
+* If you make a route with a path of `/quotes/search`
+* ...and then you make a GET request for a URL like: http://localhost:3000/cars/search?color=blue&gears=5
+* ...then you can obtain the query parameters from the request using: `request.query.color` and `request.query.gears`
+
+[Official Express.js documentation about req.query](https://expressjs.com/en/api.html#req.query)
+
+## Extracting values of "Route parameters"
+
+* If you make a route with a path of `/quotes/:quoteId`
+* ...and then you make a GET request for a URL like: http://localhost:3000/quotes/17
+* ...then you can obtain the quoteId from the request using: `request.params.quoteId`
+
+[Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
+
 
