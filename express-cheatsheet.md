@@ -35,7 +35,7 @@ app.listen(process.env.PORT);
 
 # Basic C.R.U.D. operations (Create Read Update Delete)
 
-## Creating a resource
+## CREATING a resource
 
 To allow the user to create a new instance of a resource, such as a recipe, we'd create the route handler to:
 
@@ -70,13 +70,13 @@ In both cases you can then say `request.body` to get either an object of key-val
 
 [Official Express.js documentation about req.body](https://expressjs.com/en/api.html#req.body)
 
-## Reading a resource
+## READING a resource
 
 To read *all* resources we make a route handler to match the `GET` HTTP method, and a route path of `/recipes`
 
 To read *one* resource we make a route handler to match the `GET` HTTP method, and a route path of `/recipes/:id`, in order to match GET requests to real paths such as /recipe/117
 
-## Updating a resource
+## UPDATING a resource
 
 To allow the user to update a resource, such as a recipe, we'd create the route handler to:
 
@@ -99,7 +99,7 @@ As with POST requests which create resources, we expect the changed content in t
 
 
 
-## Deleting a resource
+## DELETING a resource
 
 To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to match the `DELETE` HTTP method, and use a route path of `/recipes/:id` to match an example of /recipes/117, as follows:
 
