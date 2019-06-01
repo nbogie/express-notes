@@ -1,5 +1,7 @@
-In groups, work out the detail of the HTTP messages and involved route handler(s) needed to deal with the following stories.  
-In all cases assume the recipe API lives at https://api.cyfrecipes.site
+Exercise: simulate HTTP messages and route handlers
+
+In groups, work out the detail of the HTTP messages and route handlers needed to deal with the following stories.  
+(In all cases assume the recipe API lives at https://api.cyfrecipes.site)
 
 ## 1. I want to read ALL recipes
 ## 2. I want to read this ONE recipe.  Its `id` is 17 and its `title` is "Lasagne".
