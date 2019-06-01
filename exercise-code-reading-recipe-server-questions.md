@@ -1,4 +1,4 @@
-# Code-Reading Exercise - Node module
+# Code-Reading Exercise - Recipe API Server
 
 * On your own you should have read this code for the recipe API, https://glitch.com/~cyf-recipes-reading-exercise?path=server.js
 * With your neighbour decide answers for all of the following questions
