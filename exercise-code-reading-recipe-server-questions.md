@@ -29,6 +29,6 @@ Your boss wants this route to return all of the recipe objects whose `title` pro
 
 ### Miscellaneous questions
 
-10. Considering *all* of the route handlers, which route handlers will NEVER make changes to the recipes data on the server?
+10. Considering *all* of the route handlers, which route handlers will NEVER make changes to the recipes data (the array `recipes`) on the server?
 11. What is the first line of the function `updateRecipeInPlace` ?
 12. In the only call to the function `app.put`, what is the type of the second parameter?
