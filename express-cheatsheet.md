@@ -32,15 +32,35 @@ app.listen(process.env.PORT);
 
 [Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
+
+## Creating a resource
+
+To allow the user to create a new instance of a resource, such as a recipe, we'd create the route handler to:
+
+* match the `POST` HTTP method, and 
+* use a route path of `/recipes`
+
+```
+app.post('/recipes', function (request, response) {
+
+  const newRecipe = request.body
+   //TODO:...
+});
+```
+
+Note: the new content is normally submitted as part of the request body, and accessed with `request.body`.
+However, before this is possible, see the following section `Accessing request.body in a POST request`.
+
 ## Accessing request.body in a POST request
 If you are going to use the body of a POST request in a route handler, you will have to add one of two lines to first process the body.  How you do this depends on how the request has been submitted.  
 
 ### If the request has come from an HTML form:
 
-if it has come from a HTML form you need to add the line
+if it has been submitted by HTML form you need to add the line
 ```app.use(express.urlencoded({ extended: false }))```
 
 ### If the request has come from `fetch` (e.g. in React), or from Postman
+
 if it has come from a HTML form you need to add the line
 ```app.use(express.json())```
 
