@@ -101,7 +101,10 @@ As with POST requests which create resources, we expect the changed content in t
 
 ## DELETING a resource
 
-To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to match the `DELETE` HTTP method, and use a route path of `/recipes/:id` to match an example of /recipes/117, as follows:
+To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to:
+
+* match the `DELETE` HTTP method, and 
+* use a route path of `/recipes/:id` to match an example of /recipes/117, as follows:
 
 ```
 app.delete('/recipes/:id', function(req, res) {
