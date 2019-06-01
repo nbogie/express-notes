@@ -1,0 +1,25 @@
+    {
+        "category": "Vegetarian",
+        "title": "Beans on Toast",
+        "image": "https://images.unsplash.com/photo-1543550494-debcbdb812ac",
+        "ingredients": [
+            "Two slices of brown bread",
+            "Butter",
+            "Can of Beans",
+            "Optional: Cheddar cheese",
+            "Optional: Black pepper to season"
+        ],
+        "prepTime": 5,
+        "steps": [
+            "Put the bread in the toaster",
+            "Heat the beans in a saucepan until bubbling a lot",
+            "Once the toast has cooled, butter it and plate it",
+            "Pour the beans on or beside toast",
+            "Optionally add grated cheddar and/or black pepper",
+            "Serve immediately"
+            
+        ],
+        "author": "Neill",
+        "countryOfOrigin": "unknown",
+        "course": "Main"
+    }
