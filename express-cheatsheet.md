@@ -33,6 +33,8 @@ app.listen(process.env.PORT);
 [Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
 
+# Basic C.R.U.D. operations (Create Read Update Delete)
+
 ## Creating a resource
 
 To allow the user to create a new instance of a resource, such as a recipe, we'd create the route handler to:
@@ -67,6 +69,12 @@ if it has come from a HTML form you need to add the line
 In both cases you can then say `request.body` to get either an object of key-value pairs, or the JSON which was posted.
 
 [Official Express.js documentation about req.body](https://expressjs.com/en/api.html#req.body)
+
+## Reading a resource
+
+To read *all* resources we make a route handler to match the `GET` HTTP method, and a route path of `/recipes`
+
+To read *one* resource we make a route handler to match the `GET` HTTP method, and a route path of `/recipes/:id`, in order to match GET requests to real paths such as /recipe/117
 
 ## Updating a resource
 
