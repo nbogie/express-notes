@@ -33,13 +33,14 @@ app.listen(process.env.PORT);
 [Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
 ## Accessing request.body in a POST request
-If you are going to use the body of a POST request in a route, you will have to add one of two lines to first process the body.  If the request has come from
-### ...from an HTML form:
+If you are going to use the body of a POST request in a route, you will have to add one of two lines to first process the body.  How you do this depends on how the request has been submitted.  
+
+### If the request has come from an HTML form:
 
 if it has come from a HTML form you need to add the line
 ```app.use(express.urlencoded({ extended: false }))```
 
-### ...from fetch (e.g. in React), or from Postman
+### If the request has come from `fetch` (e.g. in React), or from Postman
 if it has come from a HTML form you need to add the line
 ```app.use(express.json())```
 
