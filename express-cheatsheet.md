@@ -33,7 +33,7 @@ app.listen(process.env.PORT);
 [Official Express.js documentation about Route Parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
 
 ## Accessing request.body in a POST request
-If you are going to use the body of a POST request in a route, you will have to add one of two lines to first process the body.  How you do this depends on how the request has been submitted.  
+If you are going to use the body of a POST request in a route handler, you will have to add one of two lines to first process the body.  How you do this depends on how the request has been submitted.  
 
 ### If the request has come from an HTML form:
 
@@ -48,9 +48,32 @@ In both cases you can then say `request.body` to get either an object of key-val
 
 [Official Express.js documentation about req.body](https://expressjs.com/en/api.html#req.body)
 
+## Updating a resource
+
+To allow the user to update a resource, such as a recipe, we'd create the route handler to:
+
+* match the `PUT` HTTP method, and 
+* use a route path of `/recipes/:id`, to match an example of /recipes/117
+
+```
+app.put("/messages/:id", function (request, response) {
+  const id = request.params.id;
+  
+  //TODO: find the recipe with the matching id
+  
+
+});
+```
+
+As with POST requests which create resources, we expect the changed content in the request body.
+* This is accessed with `request.body`
+* You must first use `app.use(express.json())` or `app.use(express.urlencoded({ extended: false }))` as discussed above in the section [Accessing request.body in a POST request]("#Accessing+request.body+in+a+POST+request)
+
+
+
 ## Deleting a resource
 
-To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to match the DELETE method, and an example route of /recipes/118, as follows:
+To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to match the `DELETE` HTTP method, and use a route path of `/recipes/:id` to match an example of /recipes/117, as follows:
 
 ```
 app.delete('/recipes/:id', function(req, res) {
@@ -60,6 +83,8 @@ app.delete('/recipes/:id', function(req, res) {
   
   //TODO: delete the recipe with the matching id from your data source (e.g. in-memory array or mongoDB)
   //TODO: if the recipe was found and deleted successfully, return status 204 and an empty body.
-}
+});
 ```
+
+Note that the request params will be strings, not numbers, so you may have to attempt to convert your id param to a number before trying to match it against recipe ids if those happen to be stored as numbers.
 
