@@ -47,3 +47,19 @@ if it has come from a HTML form you need to add the line
 In both cases you can then say `request.body` to get either an object of key-value pairs, or the JSON which was posted.
 
 [Official Express.js documentation about req.body](https://expressjs.com/en/api.html#req.body)
+
+## Deleting a resource
+
+To allow the user to delete a resource such as a recipe, by id, we'd create the route handler to match the DELETE method, and an example route of /recipes/118, as follows:
+
+```
+app.delete('/recipes/:id', function(req, res) {
+  
+  //look in the request params to get the id of the recipe to delete:
+  const idToDelete = request.params.id;
+  
+  //TODO: delete the recipe with the matching id from your data source (e.g. in-memory array or mongoDB)
+  //TODO: if the recipe was found and deleted successfully, return status 204 and an empty body.
+}
+```
+
