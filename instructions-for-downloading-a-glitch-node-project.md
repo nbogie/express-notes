@@ -22,6 +22,10 @@
 * change the path to test other routes
 * test other non-GET routes with Postman
 
+### You're done!
+
+All done!  the next bit is just if you want to store your work on github.
+
 
 ### Optional: Store in a new repo on GitHub
 
