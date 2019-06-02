@@ -1,4 +1,4 @@
-# Exercise: Allow update of existing chat messages via PUT (5-15 minutes)
+# Exercise: Allow update of existing chat messages (10-20 minutes)
 
 ## Objective
 Change a chat API server to allow update of existing chat messages using PUT method.
