@@ -19,7 +19,7 @@ app.listen(process.env.PORT);
 
 ## Adding a "Route"
 
-A route is simply an address that the server can handle so:
+A route is simply a path and HTTP method that the server can handle so:
 
 ```js
 app.get('/', function(request, response) {
@@ -27,9 +27,15 @@ app.get('/', function(request, response) {
 });
 ```
 
-Above handles a client request to the '/' route and responds with the string (text) "hello Express world!"
+The above shows a 'route handler' being registered which will be used to handle a client HTTP GET request to the '/' path.  It will respond with the string (text) "hello Express world!"
 
-* Notice the `app.get` in the beginning, this determines the method for this route, others include 'post', 'put', 'delete'
+* Notice the `app.get` in the beginning - this determines the method for this route.  Other common methods include 'post', 'put', and 'delete'.
+
+* Calling `app.get(...)` in this way does NOT make a request - those can only be initiated on a client.  It registers the route handler so that in future whenever the server gets a matching HTTP request, it knows to call the function given here in the second parameter.
+
+  * When that happens, two objects, request and response will be passed as parameters to our route handler. These represent 
+    * the received HTTP request, which can be examined by the route handler (e.g. to find route or query parameters, or content in the request body), AND 
+    * the HTTP response under construction (not yet sent), which our handler will generally fill in (perhaps including requested content in the body of the response) and set a status code on to indicate the outcome of the processing of the request.
 
 # Basic C.R.U.D. operations (Create Read Update Delete)
 
