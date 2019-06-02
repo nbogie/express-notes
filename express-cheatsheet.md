@@ -37,6 +37,8 @@ The above shows a 'route handler' being registered which will be used to handle 
     * the received HTTP request, which can be examined by the route handler (e.g. to find route or query parameters, or content in the request body), AND 
     * the HTTP response under construction (not yet sent), which our handler will generally fill in (perhaps including requested content in the body of the response) and set a status code on to indicate the outcome of the processing of the request.
 
+You can read more in [Basic Routing](https://expressjs.com/en/starter/basic-routing.html) in the express starter docs.
+
 # Basic C.R.U.D. operations (Create Read Update Delete)
 
 ## CREATING a resource
