@@ -4,7 +4,7 @@
 * With your neighbour decide answers for all of the following questions
 * Note: Do NOT make requests to the server to test your answers, until you are told you may do so.
 
-### In the route handler for `GET /`
+### In the route handler for `GET /recipes`
 1. what status code will be returned if the server's list of recipes is empty?
 2. what body content will be returned if the server's list of recipes is empty?
 
