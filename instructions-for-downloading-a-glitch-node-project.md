@@ -4,16 +4,16 @@
 * visit your desired glitch project's code page
 * click on `tools` in the bottom left
 * click on `git, import, and export` from the pop-up menu
-* click on `download project`
-
-### On your computer
-* find the downloaded zip (.tgz) file on your computer
-* right-click on it, and choose `extract to...`
-* choose a destination for the project - e.g. next to any other Node projects
-* find the new directory and rename it to remove the timestamp
+* click on `read`
+* click on `copy`
+* this will copy the address of the git repo that glitch uses to store your project in
 
 ### in a terminal
-* `cd` into the directory containing `package.json`
+* change directory into the parent directory that will contain your express project directory
+* type `git clone ` but DO NOT press enter or return
+* paste the git repo address from the clipboard, so that the full command looks SOMETHING like:
+  `git clone https://api.glitch.com/git/YOUR-PROJECT-NAME`
+* change directory into the newly created project directory
 * run `npm install`
 * run `PORT=3001 npm start`
 
