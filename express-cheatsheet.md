@@ -16,6 +16,21 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT);
 ```
 
+
+## Adding a "Route"
+
+A route is simply an address that the server can handle so:
+
+```js
+app.get('/', function(request, response) {
+  response.send("hello Express world!")
+});
+```
+
+Above handles a client request to the '/' route and responds with the string (text) "hello Express world!"
+
+* Notice the `app.get` in the beginning, this determines the method for this route, others include 'post', 'put', 'delete'
+
 # Basic C.R.U.D. operations (Create Read Update Delete)
 
 ## CREATING a resource
