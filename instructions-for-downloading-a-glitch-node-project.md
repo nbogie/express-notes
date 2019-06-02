@@ -40,4 +40,4 @@ All done!  the next bit is just if you want to store your work on github.
 * Paste it into terminal but change `origin` to `github` and ensure it runs with no errors
 * Run: `git push -u github master`
 * Reload your github page and explore to ensure your most recent code is there.
-
+* All done!  Note that your local repo now has two remotes: `github` (points to your repo on github) and `origin` (points to your repo on glitch).
