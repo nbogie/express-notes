@@ -18,6 +18,6 @@
 * run `PORT=3001 npm start`
 
 ### Test in a browser
-* visit http://localhost:3002/
+* visit http://localhost:3001/
 * change the path to test other routes
 * test other non-GET routes with Postman
