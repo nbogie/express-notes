@@ -21,3 +21,19 @@
 * visit http://localhost:3001/
 * change the path to test other routes
 * test other non-GET routes with Postman
+
+
+### Optional: Store in a new repo on GitHub
+
+* Open github.com in a browser (ensure you are logged in)
+* In the top-right click the plus (+) sign
+* Choose "new repository"
+* Add a suitable name for the repository. e.g. `chat-API`
+* Don't change anything else
+* Click `create repository` at the bottom of the form
+* Find the section entitled "...or push an existing repository from the command line"
+* Copy the FULL `git remote add origin` command from that section
+* Paste it into terminal but change `origin` to `github` and ensure it runs with no errors
+* Run: `git push -u github master`
+* Reload your github page and explore to ensure your most recent code is there.
+
