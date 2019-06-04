@@ -29,7 +29,7 @@
 All done!  the next bit is just if you want to store your work on github.
 
 
-### Optional: Store in a new repo on GitHub
+### 5. Optional: Store in a new repo on GitHub
 
 * Open github.com in a browser (ensure you are logged in)
 * In the top-right click the plus (+) sign
